@@ -57,7 +57,7 @@ class _HomePageState extends State<HomePage> {
               RaisedButton(
                 onPressed: () async {
                   final SingleImagePicker singleImagePicker = SingleImagePicker(
-                    pickImageSource: PickImageSource.gallery,
+                    pickImageSource: PickImageSource.both,
                     onImagePicked: (path) {
                       setState(() {
                         photoSource = PhotoSource.ASSET;
