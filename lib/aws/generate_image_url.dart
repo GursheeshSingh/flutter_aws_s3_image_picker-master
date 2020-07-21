@@ -22,8 +22,6 @@ class GenerateImageUrl {
 
       var result = jsonDecode(response.body);
 
-      print(result);
-
       if (result['success'] != null) {
         success = result['success'];
         message = result['message'];

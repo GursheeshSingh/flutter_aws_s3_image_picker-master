@@ -5,8 +5,6 @@ void main() {
   runApp(MyApp());
 }
 
-enum PhotoSource { ASSET, NETWORK }
-enum PhotoStatus { LOADING, ERROR, LOADED }
 enum PickImageSource { gallery, camera, both }
 
 const Color kDarkGray = Color(0xFFA3A3A3);

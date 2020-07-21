@@ -5,6 +5,9 @@ import 'package:flutter_icons/flutter_icons.dart';
 import 'image_picker/single_image_picker.dart';
 import 'main.dart';
 
+enum PhotoSource { ASSET, NETWORK }
+enum PhotoStatus { LOADING, ERROR, LOADED }
+
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
@@ -67,7 +70,7 @@ class _HomePageState extends State<HomePage> {
                     },
                     onSaveImage: (String url) async {
                       print('On save image');
-                      return true;
+                      return false;
                     },
                     onImageSuccessfullySaved: (url) {
                       setState(() {
